@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.27/bootstrap-native-v4.min.js"></script>
+        
+    
+        <script src="../js/image-slider.js"></script>
+        <link rel="stylesheet" href="../css/indexone.css">    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+</head>
+<body>
+        
+    <nav class="navbar navbar-expand-md navbar-dark " id="navbar" style="background-color: rgb(31, 32, 70);">
+            <a href="#" class="navbar-brand">Brand</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="aboutme.html" class="nav-item nav-link">About me</a>
+                    <a href="contactme.html" class="nav-item nav-link">Contact me</a>
+                    <a href="test.html" class="nav-item nav-link " >The table</a>
+                    <a href="nature.html" class="nav-item nav-link " >requirements</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="what.html" class="nav-item nav-link">well?</a>
+            </div>
+        </div>
+    </nav>
+    <button onclick="totop()" id="mybutton" title="go to top"></button>
+    <div class="content">
+
+        <div style="padding-top: 70px; color: white; padding-left: 20vw; padding-right: 20vw;">
+                
+                <div class="form-group">
+                    <label for="name">name:</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="skill">Skill:</label>
+                    <input type="text" class="form-control" id="skill">
+                </div>
+                <div class="form-group">
+                    <label for="level">Level:</label>
+                    
+            <select id="level" name="level" class="form-control">
+                    <option value="Proficient">Proficient</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Beginner">Beginner</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <input type="text" class="form-control" id="comment">
+            </div>
+            
+            <button type="submit" onClick="readText()" class="btn btn-default" style="background-color: white;">Submit</button>
+        </div>
+        
+        
+        
+        <div class="table-responsive" style="padding-top: 60px;">
+                <table class="table" style="color: white;" id="gay">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Skill</th>
+                    <th>Level</th>
+                    <th>Comment</th>
+                </tr>
+            </thead>
+            <tbody id="bruh">
+                
+            </tbody>
+            
+        </table>
+    </div>
+</div>
+<script src="../js/input.js"></script>
+<script src="../js/navbar.js"></script>
+</body>
+</html>
